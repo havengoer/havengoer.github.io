@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>Clariz Mariano</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+      <meta name="description" content="fullPage full-screen navigation and sections control menu." />
+      <meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
+      <meta name="Resource-type" content="Document" />
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+	  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116937547-1"></script>
+	  <script>
+	    window.dataLayer = window.dataLayer || [];
+	    function gtag(){dataLayer.push(arguments);}
+	    gtag('js', new Date());
+
+	    gtag('config', 'UA-116937547-1');
+	  </script>
+
+      <link rel="stylesheet" type="text/css" href="js/jquery.fullPage.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+      <link rel="stylesheet" type="text/css" href="css/examples.css" />
+      <!-- Template CSS Files
+         ================================================== -->
+      <!-- iOS Build Bootstrs CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Ionicons Fonts Css -->
+      <link rel="stylesheet" href="css/ionicons.min.css">
+      <!-- animate css -->
+      <link rel="stylesheet" href="css/animate.css">
+      <!-- Hero area slider css-->
+      <link rel="stylesheet" href="css/slider.css">
+      <!-- owl craousel css -->
+      <link rel="stylesheet" href="css/owl.carousel.css">
+      <link rel="stylesheet" href="css/owl.theme.css">
+      <link rel="stylesheet" href="css/jquery.fancybox.css">
+      <!-- template main css file -->
+      <link rel="stylesheet" href="css/main.css">
+      <!-- responsive css -->
+      <link rel="stylesheet" href="css/responsive.css">
+      <style>
+         /* Style for section backgrounds
+         * --------------------------------------- */
+         /* Centered texts in each section
+         * --------------------------------------- */
+         /* Overwriting styles for control arrows for slides
+         * --------------------------------------- */
+         .controlArrow.prev {
+         left: 50px;
+         }
+         .controlArrow.next{
+         right: 50px;
+         }
+         /* Bottom menu
+         * --------------------------------------- */
+         #infoMenu li a {
+         color: #fff;
+         }
+      </style>
+      <!--[if IE]>
+      <script type="text/javascript">
+         var console = { log: function() {} };
+      </script>
+      <![endif]-->
+      <!--
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+         -->
+      <!-- Template Javascript Files
+         ================================================== -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+      <!-- modernizr js -->
+      <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+      <!-- jquery -->
+      <script src="js/jquery.min.js"></script>
+      <!-- owl carouserl js -->
+      <script src="js/owl.carousel.min.js"></script>
+      <!-- bootstrap js -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- wow js -->
+      <script src="js/wow.min.js"></script>
+      <!-- slider js -->
+      <script src="js/slider.js"></script>
+      <script src="js/jquery.fancybox.js"></script>
+      <!-- template main js -->
+      <script src="js/main.js"></script>
+      <script type="text/javascript" src="vendors/scrolloverflow.js"></script>
+      <script type="text/javascript" src="js/examples.js"></script>
+      <!-- fotorama.css & fotorama.js. -->
+      <link  href="css/fotorama.css" rel="stylesheet">
+      <!-- 3 KB -->
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+      <script>
+         if (screen && screen.width > 768) {
+         document.write('<script type="text/javascript" src="js/jquery.fullPage.js"><\/script>');
+         console.log("Fullpage MODE ON");
+         }
+      </script>
+      <script type="text/javascript">
+         $(document).ready(function() {
+         $('#fullpage').fullpage({
+         				anchors: ['Welcome', 'AboutMe', 'Map', 'Works', '5', '6', '7', '8'],
+         css3: true,
+         fitToSection: false,
+         scrollOverflow: true,
+         		navigation: true,
+         		navigationPosition: 'right',
+         resetSliders: true,
+         scrollOverflowOptions: {
+         		mouseWheel: true,
+         		hideScrollbars: false,
+         		fadeScrollbars: false,
+         		disableMouse: true,
+         }
+
+         });
+         });
+      </script>
+   </head>
+   <body>
+      <div class="topnav whitefont menu fw-100 " id="myTopnav">
+         <div class="align-items-center2 fw-100 ">
+            <a href="#Welcome">Hello</a>
+            <a href="#section2">About Me</a>
+            <a href="#section3">Map Gallery</a>
+            <a href="#Antique">Works</a>
+            <a href="http://clarizmariano.com/Clariz%20Mariano%20-%20UX%20Designer%20resume.pdf" target="_blank" >Resume</a>
+            <!-- <a href="#FifthPage">Contact</a> -->
+            <a href="javascript:void(0);" style="font-sizeC:1em;" class="icon" onclick="myFunction()">&#9776;</b></a>
+         </div>
+      </div>
+      <script>
+         function myFunction() {
+             var x = document.getElementById("myTopnav");
+             if (x.className === "topnav") {
+                 x.className += " responsive";
+             } else {
+                 x.className = "topnav";
+             }
+         }
+      </script>
+      <div id="fullpage">
+         <div class="section" col-lg-12 col-md-12 col-sm-12 " id="section1">
+            <div class="align-items-center">
+               <h1 class="wow fadeInUp animated cd-headline slide  align-items-center" data-wow-delay=".4s" >
+                  <img src="images/profilepic.jpg" class="img-circle" alt="Me and a Whaleshark" width="304" height="236"><br>
+                  <span class="dark black align-items-center">Hi, my name is Clariz & I am a </span><br>
+                  <span class="cd-words-wrapper  align-items-center">
+                  <b class="is-visible">DESIGNER</b>
+                  <b>DEVELOPER</b>
+                  <b>MAKER</b>
+                  </span><br><br>
+                  <a href="#AboutMe" ><i class="ion-chevron-down black bigbigfont"></i> </a>
+                  <br>
+               </h1>
+            </div>
+         </div>
+         <!--
+            ==================================================
+            What People Say Section Start
+            ================================================== -->
+         <div class="section fp-auto-height-responsive" id="section2">
+            <div class="section-heading">
+               <h1 class="titlex  align-items-center" data-wow-delay=".9s">What People Say About Me?</h1>
+            </div>
+            <div class="container">
+               <!-- 1 	3f51b5		================================================= -->
+               <div class="col-md-4 col-lg-4 col-xs-12"  >
+                  <figure class="" data-wow-duration="500ms" data-wow-delay="300ms">
+                     <div class="img-wrapper " style=" border: solid #3f51b5 2px; border-width: 50%; border-height:50%">
+                        <br><br><br><br>
+                        <div class="media-body">
+                           <h1 class="media-heading" style="color:#3f51b5">
+                              <i class="ion-ios-lightbulb-outline custom-ion-color wow fadeInUp" data-wow-delay="1s"></i>
+                              <br>Creative
+                           </h1>
+                        </div>
+                        <div class="overlay " style=" background: #3f51b5">
+                           <br>
+                           <p class="whitefont testimonialtext">Clariz is a strong, independent, and very dedicated Game Designer. She led several of our projects and always did her best to find new ways to improve the games and learn new techniques. She is very proactive, resourceful, and is a great team leader and team player. It was a real pleasure to have her on our team.
+                              <br><br>- Christopher Natsuume<br>Creative Director, Boomzap Entertainment
+                           </p>
+                        </div>
+                     </div>
+                  </figure>
+               </div>
+               <!-- 2 	259b24		================================================= -->
+               <div class="col-md-4 col-lg-4 col-xs-12">
+                  <figure class="" data-wow-duration="500ms" data-wow-delay="300ms">
+                     <div class="img-wrapper  "  style=" border: solid #259b24 2px; border-width: 50%; border-height:50%">
+                        <br><br><br><br>
+                        <div class="media-body">
+                           <h1 class="media-heading" style="color:#259b24">
+                              <i class="ion-wand custom-ion-color wow fadeInUp" data-wow-delay="1s"></i>
+                              <br>Technically Adept
+                           </h1>
+                        </div>
+                        <div class="overlay " style=" background: #259b24"
+                        <br><br>
+                        <p class="whitefont testimonialtext">She is not an ordinary game designer, she gets a lot of technical details pretty straight forward and of course she is able to easily explain that to all the non-technical people in the team. I believe Clariz would be good at coding, but she did also a good job working in the creative area, arranging the gameplay and interacting with the artists.
+                           <br><br>- Viacheslav Nikolaev<br>Compiler Developer, Samsung R&D Russia
+                        </p>
+                     </div>
+               </div>
+               </figure>
+            </div>
+            <!-- 3 	e51c23		================================================= -->
+            <div class="col-md-4 col-lg-4 col-xs-12">
+               <figure class="" data-wow-duration="500ms" data-wow-delay="300ms">
+                  <div class="img-wrapper  "  style=" border: solid #e51c23 2px; border-width: 50%; border-height:50%">
+                     <br><br><br><br>
+                     <div class="media-body">
+                        <h1 class="media-heading" style="color:#e51c23">
+                           <i class="ion-ios-checkmark-outline custom-ion-color wow fadeInUp" data-wow-delay="1s"></i>
+                           <br>Proactive
+                        </h1>
+                     </div>
+                     <div class="overlay " style=" background: #e51c23"
+                     <br> <br>
+                     <p class="whitefont testimonialtext">Clariz is very creative and innovative when it comes to game design. She's also very organized and is a good team leader and team member. Clariz is the type who doesn't stop nor is merely satisfied with just involving herself in game design in her current project, but also involves herself in other aspects of her project such as marketing and game analytics.
+                        <br><br>- Cara Uymatiao, Production Manager, Casual Games Association
+                     </p>
+                  </div>
+            </div>
+            </figure>
+
+        </div>
+         <!-- 4 	ff5722		================================================= -->
+         <div class="col-md-4 col-lg-4 col-xs-12">
+            <figure class="" data-wow-duration="500ms" data-wow-delay="300ms">
+               <div class="img-wrapper  "  style=" border: solid #ff5722 2px; border-width: 50%; border-height:50%">
+                  <br><br><br><br>
+                  <div class="media-body">
+                     <h1 class="media-heading" style="color:#ff5722">
+                        <i class="ion-ios-people custom-ion-color wow fadeInUp" data-wow-delay="1s"></i>
+                        <br>Team Player
+                     </h1>
+                  </div>
+                  <div class="overlay " style=" background: #ff5722"
+                  <br> <br>
+                  <p class="whitefont testimonialtext">She was always the one coming up with new suggestions and asking the hard questions, to challenge what the common notion was. She's also very good at saying no to ideas that may work but will complicate the schedules of the game. Despite that, she was also the first to admit her ideas may have been wrong in the first place. There's no ego that prevents her from working absolutely well in any team.
+                     <br>- Dodge Ronquillo, Product Manager, Smart Communications
+                  </p>
+               </div>
+         </div>
+         </figure>
+      </div>
+      <!-- 5 	e91e63		================================================= -->
+      <div class="col-md-4 col-lg-4 col-xs-12">
+         <figure class="" data-wow-duration="500ms" data-wow-delay="300ms">
+            <div class="img-wrapper  "  style=" border: solid #e91e63 2px; border-width: 50%; border-height:50%">
+               <br><br><br><br>
+               <div class="media-body">
+                  <h1 class="media-heading" style="color:#e91e63">
+                     <i class="ion-stats-bars custom-ion-color wow fadeInUp" data-wow-delay="1s"></i>
+                     <br>Data-Driven
+                  </h1>
+               </div>
+               <div class="overlay " style=" background: #e91e63"
+               <br><br>
+               <p class="whitefont testimonialtext">I can honestly say that Clariz is one of the best people that I've had the opportunity to work with. She's level-headed, detail-oriented, and knows here way around metrics. In fact, I believe she was our go-to person when it came to harvesting useful information from our metrics systems. She motivated, she's a hardworker, and I believe that she would be a great asset to any workforce.
+                  <br><br>- Eleazar Lim<br>Game Designer, Boomzap Entertainment
+               </p>
+            </div>
+      </div>
+      </figure>
+      </div>
+      <!-- 6 	9c27b0		================================================= -->
+      <div class="col-md-4 col-lg-4 col-xs-12">
+         <figure class="" data-wow-duration="500ms" data-wow-delay="300ms">
+            <div class="img-wrapper  "  style=" border: solid #9c27b0 2px; border-width: 50%; border-height:50%">
+               <br><br><br><br>
+               <div class="media-body">
+                  <h1 class="media-heading" style="color:#9c27b0">
+                     <i class="ion-android-star-outline custom-ion-color wow fadeInUp" data-wow-delay="1s"></i>
+                     <br>Overall Awesome
+                  </h1>
+               </div>
+               <div class="overlay " style=" background: #9c27b0">
+                  <br><br>
+                  <p class="whitefont testimonialtext">I worked with Clariz over several game projects at Boomzap and she is very diligent, hard-working and knows the ins and outs of casual game design. I would highly recommend her for a game design position at any company.
+                     <br><br>- Gabby Dizon<br>CEO and Co-Founder, Altitude Games
+                  </p>
+               </div>
+            </div>
+         </figure>
+      </div>
+      <br><br><br>
+      </div>
+      </div>
+      <!--
+         ==================================================
+         Map Section Start
+         ================================================== -->
+      <div class="section" id="section3">
+         <div class="slide col-lg-12 col-md-12 col-sm-12  align-items-center" id="slide1a">
+            <div class="row2">
+               <div class="section-heading  align-items-center">
+                  <p align="center black">
+                  <h1 class="black" data-wow-delay=".9s">Projects I've Been Involved In</h1>
+                  </p>
+               </div>
+               <p align="center">
+                  <iframe src="map.html" width="1100px" height="576px" frameborder="0" marginwidth="0" marginheight="0" scrolling="no">Loading...</iframe>
+               </p>
+            </div>
+         </div>
+      </div>
+      <!--
+         ==================================================
+         Folio Section Start
+         ================================================== -->
+      <div class="section" id="Antique">
+         <div class="slide col-lg-12 col-md-12 col-sm-12 " id="slide1a">
+            <div style="">
+               <div class="row2">
+                  <!--			<h1 class=" section-heading whitefont" align"left">Antique Road Trip: American Dreamin'</h1> -->
+                  <div class="col-md-4 col-sm-12 d-flex alignitemscenter">
+                     <br><br>
+                     <div class="stylepadding-left " data-wow-delay=".3s" data-wow-duration="500ms">
+                        <p align="center">
+                           <img src="images/logo1.png" class="img-responsive" alt="American Dreamin" >
+                        </p>
+                        <div id="information">
+                           <h3 class="selection  xalign-items-center highlight-container black">Role: Lead Game Design</h3>
+                           <br><br>
+                           <h4 class="selection highlight-container black">
+                              Responsibilities: Scripted Quests  |  Tutorial Design  |  UI Integration  |  Analytics
+                           </h4>
+                           <!-- <a class="btn-lines dark btn btn-default btn" data-wow-delay=".9s" href="#works" data-section="#works" >
+                              <h3><i class="ion-clipboard"></i> View Process</h3>
+                              </a> -->
+                           <p class="   buildlinks">
+                           <h2 class="selection xalign-items-center highlight-container">
+                           <a href="http://www.bigfishgames.com/games/7704/antique-road-trip-american-dreamin/" class="Windows Build" target="_blank" >
+                           <i class="ion-social-windows black"></i>
+                           </a>&nbsp;
+                           <a href="https://itunes.apple.com/us/app/antique-road-trip-american-dreamin-find-hidden-objects/id611226091?mt=8" class="black" target="_blank" >
+                           <i class="ion-social-apple black"></i>
+                           </a>&nbsp;
+                           <a href="http://www.boomzap.com/ipad/pocket-ages-ipad/" class=" black" target="_blank" >
+                           <i class="ion-ios-home black"></i>
+                           </a>
+                           <h2>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-8 col-sm-12 d-flex align-items-center2" >
+                     <img src="./images/pic01a.png" alt="" class="img-responsive align-items-center"  ><br>
+                     <!--	<h1 class="align-items-center">Creating Value Prepositions</h1> -->
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="slide col-lg-12 col-md-12 col-sm-12 align-items-center" id="slide1b"  >
+            <div class="container">
+               <h2 class="black highlight-container">Screenshots</h2>
+               <div class="fotorama "  data-nav="thumbs" data-width="90%"
+                  data-ratio="600/400" data-fit="contain">
+                  <a href="images/folio/art/1.jpg"><img src="images/folio/art/1_thumb.jpg"></a>
+                  <a href="images/folio/art/2.jpg"><img src="images/folio/art/2_thumb.jpg"></a>
+                  <a href="images/folio/art/3.jpg"><img src="images/folio/art/3_thumb.jpg"></a>
+                  <a href="images/folio/art/4.jpg"><img src="images/folio/art/4_thumb.jpg"></a>
+                  <a href="images/folio/art/5.jpg"><img src="images/folio/art/5_thumb.jpg"></a>
+                  <a href="images/folio/art/6.jpg"><img src="images/folio/art/6_thumb.jpg"></a>
+                  <a href="images/folio/art/7.jpg"><img src="images/folio/art/7_thumb.jpg"></a>
+                  <a href="images/folio/art/8.jpg"><img src="images/folio/art/8_thumb.jpg"></a>
+                  <a href="images/folio/art/9.jpg"><img src="images/folio/art/9_thumb.jpg"></a>
+                  <a href="images/folio/art/10.jpg"><img src="images/folio/art/10_thumb.jpg"></a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--
+         ==================================================
+         Awakening Kingdom Folio Section Start
+         ================================================== -->
+      <div class="section" id="Awakening">
+         <div class="slide col-lg-12 col-vrmd-12 col-sm-12 row2" id="slide2_1">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+               <div class="col-md-8 col-sm-12">
+                  <p align="center">
+                     <img src="images/pic06.png" class="img-responsive" >
+                     <img src="./images/sophia.png" alt="" class="img-responsive" height="40%" ><br>
+                  </p>
+               </div>
+               <div class="col-md-4 col-sm-12" style="vertical-align:middle;">
+                  <div id="information">
+                     <h1 class="" style="vertical-align:middle;">
+                        <!--	Expanding a Franchise to F2P -->
+                     </h1>
+                     <h3 class="black highlight-container">
+                        Role: Designer
+                     </h3>
+                     <br>
+                     <h4 class="black highlight-container">
+                     Scripted Quests  |  Tutorial Design  |  UI Integration  |  Analytics
+                     </h3>
+                     <p class="buildlinks highlight-container">
+                     <h2 class="highlight-container"><a href="http://www.bigfishgames.com/games/5664/awakening-kingdoms/?pc" class="Windows Build" target="_blank" ><i class="ion-social-windows black"></i> </a>
+                        <a href="https://itunes.apple.com/us/app/awakening-kingdoms-a-hidden-object-fantasy-game/id867221931?mt=8" class="iOS Build"><i class="ion-social-apple black"></i>
+                        </a>
+                        <a href="http://www.boomzap.com/ipad/awakening-kingdoms-ipad/" class="Boomzap Page" target="_blank" >
+                        <i class="ion-ios-home black"></i>
+                        </a>
+                     </h2>
+                     </p>
+                     <br><br><br>
+                     <br><br>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="slide col-lg-12 col-md-12 col-sm-12 align-items-center" id="slide1b"  >
+            <h2 class="highlight-container">Screenshots</h2>
+            <div class="container">
+               <div class="fotorama "  data-nav="thumbs" data-width="90%">
+                  <a href="images/folio/ak/1.jpg"><img src="images/folio/ak/1_thumb.jpg"></a>
+                  <a href="images/folio/ak/2.jpg"><img src="images/folio/ak/2_thumb.jpg"></a>
+                  <a href="images/folio/ak/3.jpg"><img src="images/folio/ak/3_thumb.jpg"></a>
+                  <a href="images/folio/ak/4.jpg"><img src="images/folio/ak/4_thumb.jpg"></a>
+                  <a href="images/folio/ak/5.jpg"><img src="images/folio/ak/5_thumb.jpg"></a>
+                  <a href="images/folio/ak/6.jpg"><img src="images/folio/ak/6_thumb.jpg"></a>
+                  <a href="images/folio/ak/7.jpg"><img src="images/folio/ak/7_thumb.jpg"></a>
+                  <!--
+                     <a href="images/folio/ak/8.jpg"><img src="images/folio/ak/8_thumb.jpg"></a>
+                     <a href="images/folio/ak/9.jpg"><img src="images/folio/ak/9_thumb.jpg"></a>
+                     <a href="images/folio/ak/10.jpg"><img src="images/folio/ak/10_thumb.jpg"></a> -->
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--
+         ==================================================
+         Folio Section Start
+         ================================================== -->
+      <div class="section" id="Indentured">
+         <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="slide col-lg-12 col-md-12 col-sm-12" id="slide1_3">
+               <div class="col-lg-12 col-md-12 col-sm-12 margincorners">
+                  <div class="col-md-8 col-sm-8">
+                     <div class="stylepadding-left" data-wow-delay=".3s" data-wow-duration="500ms">
+                        <p>
+                        <h1 class="black highlight-container"style="text-align:center;"> Indentured Servant </h1>
+                        </p>
+                        <br>
+                        <div class="embed-responsive embed-responsive-16by9">
+                           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/h7VhvMPaxOQ"></iframe>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-3">
+                     <p style="text-align:center;">  <img src="images/logo02.png" alt="" class="img-responsive"> </p>
+                     <br><br>
+                     <div id="information">
+                        <h3 class="highlight-container">
+                        Role: Designer<br>
+                        <h3>
+                        <br>
+                        <h4 class="highlight-container">
+                           Responsibilities: Taught the team how to use Unity | Scripted 3D Interactions
+                        </h4>
+                        <p class="buildlinks highlight-container">
+                        <h2 class="highlight-container">
+                           <a href="https://indenturedservant.itch.io/indentured-servant" class="Home Page" target="_blank" >
+                           <i class="ion-ios-home black"></i>
+                           </a>
+                           <a href="#https://github.com/craklyn/indenturedServant" class="" target="_blank" >
+                           <i class="ion-social-github black"></i>
+                           </a>
+                           <a href="https://devpost.com/software/indenturedservant" class="black" target="_blank" >
+                           D
+                           </a>
+                        </h2>
+                        </p>
+                        </h1>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="slide col-lg-12 col-md-12 col-sm-12 align-items-center" id="slide1b"  >
+               <h2 class="highlight-container black">Screenshots</h2>
+               <div class="container">
+                  <div class="fotorama "  data-nav="thumbs" data-width="90%"
+                     >
+                     <a href="images/folio/vr/1.jpg"><img src="images/folio/vr/1_thumb.jpg"></a>
+                     <a href="images/folio/vr/2.jpg"><img src="images/folio/vr/2_thumb.jpg"></a>
+                     <a href="images/folio/vr/3.jpg"><img src="images/folio/vr/3_thumb.jpg"></a>
+                     <a href="images/folio/vr/4.jpg"><img src="images/folio/vr/4_thumb.jpg"></a>
+                     <!--
+                        <a href="images/folio/vr/5.jpg"><img src="images/folio/vr/5_thumb.jpg"></a>
+                        <a href="images/folio/vr/6.jpg"><img src="images/folio/vr/6_thumb.jpg"></a>
+                        <a href="images/folio/vr/7.jpg"><img src="images/folio/vr/7_thumb.jpg"></a>
+                        <a href="images/folio/vr/8.jpg"><img src="images/folio/vr/8_thumb.jpg"></a>
+                        <a href="images/folio/vr/9.jpg"><img src="images/folio/vr/9_thumb.jpg"></a>
+                        <a href="images/folio/vr/10.jpg"><img src="images/folio/vr/10_thumb.jpg"></a>
+                        -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--
+         ==================================================
+         Pocket Ages Folio Section Start
+         ================================================== -->
+      <div class="section" id="Pocket">
+         <div class="slide col-lg-12 col-md-12 col-sm-12 " id="slide4a">
+            <div style="">
+               <div class="row2">
+                  <div class="child col-md-12 col-sm-12 d-flex alignitemscenter ">
+                     <br><br>
+                     <div class="stylepadding-left " data-wow-delay=".3s" data-wow-duration="500ms">
+                        <p class="">
+                           <strong class="selection">
+                        <h3 class="black ">
+                        <img src="images/logo04.png" class="img-fluid" alt="" > <br>
+                        <h3 class=" highlight-container">
+                        Role: Lead Game Design<br></h3><br><h4 class=" highlight-container">
+                        Responsibilities: Scripted Quests  |  Tutorial Design  |  UI Integration  |  Analytics
+                        </h4>
+                        </strong></p>
+                        <p class="buildlinks">
+                        <h2 class="highlight-container ">
+                        <!-- <a class="btn-lines dark btn btn-default btn" data-wow-delay=".9s" href="#works" data-section="#works" >
+                           <h3><i class="ion-clipboard"></i> View Process</h3>
+                           </a> -->
+                        &nbsp;
+                        <a href="https://505games.com/games/pocket-ages" class="Windows Build" target="_blank" >
+                        <i class="ion-social-windows black"></i>
+                        </a>
+                        <a href="https://itunes.apple.com/us/app/antique-road-trip-american-dreamin-find-hidden-objects/id611226091?mt=8" class="" target="_blank" >
+                        <i class="ion-social-apple black"></i>
+                        </a>
+                        <a href="http://www.boomzap.com/ipad/pocket-ages-ipad/" class="" target="_blank" >
+                        <i class="ion-ios-home black"></i>
+                        </a>
+                        </h1>
+                        </p>
+                        <!-- <p align="">
+                           <img src="images/pic04.png" class="img-responsive" height="50%" alt="" >
+                           </p> -->
+                        <!--<a class="btn-lines dark  wow  animated smooth-scroll btn btn-default btn-green" data-wow-delay=".9s" href="#works" data-section="#works" >
+                           <h3><i class="ion-clipboard"></i> View Process</h3>
+                           </a> -->
+                     </div>
+                  </div>
+                  <div class="col-md-8 col-sm-12 d-flex align-items-center" >
+                     <!--
+                        <img src="./images/pic01a.png" alt="" class="img-responsive align-items-center"  ><br>
+                        <h1 class="align-items-center">Creating Value Prepositions</h1>
+                        -->
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="slide col-lg-12 col-md-12 col-sm-12 align-items-center" id="slide1b"  >
+            <h2 class="highlight-container">Screenshots</h2>
+            <div class="container">
+               <div class="fotorama "  data-nav="thumbs" data-width="75%"
+                  >
+                  <a href="images/folio/pa/1.jpg"><img src="images/folio/pa/1_thumb.jpg"></a>
+                  <a href="images/folio/pa/2.jpg"><img src="images/folio/pa/2_thumb.jpg"></a>
+                  <a href="images/folio/pa/3.jpg"><img src="images/folio/pa/3_thumb.jpg"></a>
+                  <a href="images/folio/pa/4.jpg"><img src="images/folio/pa/4_thumb.jpg"></a>
+                  <a href="images/folio/pa/5.jpg"><img src="images/folio/pa/5_thumb.jpg"></a>
+                  <a href="images/folio/pa/6.jpg"><img src="images/folio/pa/6_thumb.jpg"></a>
+                  <!--
+                     <a href="images/folio/pa/7.jpg"><img src="images/folio/pa/7_thumb.jpg"></a>
+                     <a href="images/folio/pa/8.jpg"><img src="images/folio/pa/8_thumb.jpg"></a>
+                     <a href="images/folio/pa/9.jpg"><img src="images/folio/pa/9_thumb.jpg"></a>
+                     <a href="images/folio/pa/10.jpg"><img src="images/folio/pa/10_thumb.jpg"></a> -->
+               </div>
+            </div>
+         </div>
+         <br><br><br>
+      </div>
+      <!--
+         ==================================================
+         Folio Section Start
+         ================================================== -->
+      <div class="section" id="Zaptales">
+         <div class="slide col-lg-12 col-md-12 col-sm-12 " id="Zaptales">
+            <div style="">
+               <div class="row2">
+                  <div class="col-md-4 col-sm-12 d-flex alignitemscenter">
+                     <br><br>
+                     <div class="stylepadding-left " data-wow-delay=".3s" data-wow-duration="500ms">
+                        <p align="center">
+                        </p>
+                        <div id=" ">
+                           <p class="">
+                              <strong class="selection">
+                           <h3 class="black ">
+                           <img src="images/logo03.png" class="img-fluid align-items-center" alt="" > <br>
+                           <h3 class="highlight-container">
+                           Role: Lead Game Design</h3><br><br><h4 class=" highlight-container">
+                           Responsibilities: Scripted Quests  |  Tutorial Design  |  UI Integration  |  Analytics
+                           </h4>
+                           </strong></p>
+                           <p class="buildlinks">
+                           <h2 class="highlight-container">
+
+                            <!--  <a href="https://itunes.apple.com/us/app/antique-road-trip-american-dreamin-find-hidden-objects/id611226091?mt=8" class="" target="_blank" >
+                              <i class="ion-social-apple black"></i>
+                              </a>  -->
+                              <a href="http://www.boomzap.com/iphone/zaptales-interactive-fairy-tales/" class="" target="_blank" >
+                              <i class="ion-ios-home black"></i>
+                              </a>
+                                      <a href="http://crazymikesapps.com/zap-tales-interactive-fairytales-free-fun-activities/" class="" target="_blank" >
+                              <i class="ion-ios-paper black"></i>
+                              </a>
+                           </h2>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-8 col-sm-12 d-flex align-items-center2" >
+                     <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bWoH4z23Dww"></iframe>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+         <div class="slide col-lg-12 col-md-12 col-sm-12 align-items-center" id="slide1b"  >
+            <div class="row ">
+               <div class="container ">
+                  <h2 class="black highlight-container">Screenshots</h2>
+                  <div class="fotorama "  data-nav="thumbs" data-width="85%" data-ratio="600/400" data-fit="contain">
+                     <a href="images/folio/zt/1.jpg"><img src="images/folio/zt/1_thumb.jpg"></a>
+                     <a href="images/folio/zt/2.jpg"><img src="images/folio/zt/2_thumb.jpg"></a>
+                     <a href="images/folio/zt/3.jpg"><img src="images/folio/zt/3_thumb.jpg"></a>
+                     <a href="images/folio/zt/4.jpg"><img src="images/folio/zt/4_thumb.jpg"></a>
+                     <a href="images/folio/zt/5.jpg"><img src="images/folio/zt/5_thumb.jpg"></a>
+                     <a href="images/folio/zt/6.jpg"><img src="images/folio/zt/6_thumb.jpg"></a>
+                     <a href="images/folio/zt/7.jpg"><img src="images/folio/zt/7_thumb.jpg"></a>
+                     <a href="images/folio/zt/8.jpg"><img src="images/folio/zt/8_thumb.jpg"></a>
+                     <a href="images/folio/zt/9.jpg"><img src="images/folio/zt/9_thumb.jpg"></a>
+                     <a href="images/folio/zt/10.jpg"><img src="images/folio/zt/10_thumb.jpg"></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--
+         ==================================================
+         Folio Section Start
+         ================================================== -->
+      <!--
+         <div class="section" id="Z">
+         	<div class="slide col-lg-12 col-md-12 col-sm-12" id="slide1">
+         		<img src="./images/logo03.png" alt="" class="img-responsive" >
+         		<div class="col-md-4 col-sm-4 embed-responsive embed-responsive-16by9">
+
+         			<br>
+         			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bWoH4z23Dww" frameborder="0" encrypted-media allowfullscreen></iframe>
+         		</div>
+         	</div>
+
+         	<div class="slide col-lg-12 col-md-12 col-sm-12" id="slide2">
+         		<h1>Slide 2</h1>
+         		<div class="">
+         			<h2>Responsive Embed</h2>
+         			<p>Create a responsive video and scale it nicely to the parent element with an 16:9 aspect ratio</p>
+         			<div class="embed-responsive embed-responsive-16by9">
+         				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+         			</div>
+         		</div>
+         	</div>
+
+         </div>
+         			-->
+      </div>
+   </body>
+</html>
