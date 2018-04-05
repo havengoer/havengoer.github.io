@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>Clariz Mariano</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+      <meta name="author" content="Alvaro Trigo Lopez" />
+      <meta name="description" content="fullPage full-screen navigation and sections control menu." />
+      <meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
+      <meta name="Resource-type" content="Document" />
+      <link rel="stylesheet" type="text/css" href="js/jquery.fullPage.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+      <link rel="stylesheet" type="text/css" href="css/examples.css" />
+      <!-- Template CSS Files
+         ================================================== -->
+      <!-- iOS Build Bootstrs CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Ionicons Fonts Css -->
+      <link rel="stylesheet" href="css/ionicons.min.css">
+      <!-- animate css -->
+      <link rel="stylesheet" href="css/animate.css">
+      <!-- Hero area slider css-->
+      <link rel="stylesheet" href="css/slider.css">
+      <!-- owl craousel css -->
+      <link rel="stylesheet" href="css/owl.carousel.css">
+      <link rel="stylesheet" href="css/owl.theme.css">
+      <link rel="stylesheet" href="css/jquery.fancybox.css">
+      <!-- template main css file -->
+      <link rel="stylesheet" href="css/main.css">
+      <!-- responsive css -->
+      <link rel="stylesheet" href="css/responsive.css">
+      <style>
+         /* Style for section backgrounds
+         * --------------------------------------- */
+         /* Centered texts in each section
+         * --------------------------------------- */
+         /* Overwriting styles for control arrows for slides
+         * --------------------------------------- */
+         .controlArrow.prev {
+         left: 50px;
+         }
+         .controlArrow.next{
+         right: 50px;
+         }
+         /* Bottom menu
+         * --------------------------------------- */
+         #infoMenu li a {
+         color: #fff;
+         }
+      </style>
+      <!--[if IE]>
+      <script type="text/javascript">
+         var console = { log: function() {} };
+      </script>
+      <![endif]-->
+      <!--
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+         -->
+      <!-- Template Javascript Files
+         ================================================== -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+      <!-- modernizr js -->
+      <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+      <!-- jquery -->
+      <script src="js/jquery.min.js"></script>
+      <!-- owl carouserl js -->
+      <script src="js/owl.carousel.min.js"></script>
+      <!-- bootstrap js -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- wow js -->
+      <script src="js/wow.min.js"></script>
+      <!-- slider js -->
+      <script src="js/slider.js"></script>
+      <script src="js/jquery.fancybox.js"></script>
+      <!-- template main js -->
+      <script src="js/main.js"></script>
+      <script type="text/javascript" src="vendors/scrolloverflow.js"></script>
+      <script type="text/javascript" src="js/examples.js"></script>
+      <!-- fotorama.css & fotorama.js. -->
+      <link  href="css/fotorama.css" rel="stylesheet">
+      <!-- 3 KB -->
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+      <script>
+         if (screen && screen.width > 768) {
+         document.write('<script type="text/javascript" src="js/jquery.fullPage.js"><\/script>');
+         console.log("Fullpage MODE ON");
+         }
+      </script>
+      <script type="text/javascript">
+         $(document).ready(function() {
+         $('#fullpage').fullpage({
+         				anchors: ['FirstPagex', 'SecondPagex', 'ThirdPagex', 'FourthPagex', 'FifthPagex'],
+         css3: true,
+
+         fitToSection: false,
+         scrollOverflow: true,
+         	navigation: true,
+         	navigationPosition: 'right',
+         resetSliders: true,
+         scrollOverflowOptions: {
+         mouseWheel: true,
+         hideScrollbars: false,
+         fadeScrollbars: false,
+         disableMouse: true,
+         }
+
+         });
+         });
+      </script>
+      //*
+   </head>
+   <body>
+      <div class="slide col-lg-12 col-md-12 col-sm-12 align-items-center" id="slide1b"  >
+         <h2>Screenshots</h2>
+         <div class="container">
+            <div class="fotorama "  data-nav="thumbs" data-width="100%"
+               data-ratio="800/600">
+               <a href="images/folio/art/1.jpg"><img src="images/folio/art/1_thumb.jpg"></a>
+               <a href="images/folio/art/2.jpg"><img src="images/folio/art/2_thumb.jpg"></a>
+               <a href="images/folio/art/3.jpg"><img src="images/folio/art/3_thumb.jpg"></a>
+               <a href="images/folio/art/4.jpg"><img src="images/folio/art/4_thumb.jpg"></a>
+               <a href="images/folio/art/5.jpg"><img src="images/folio/art/5_thumb.jpg"></a>
+               <a href="images/folio/art/6.jpg"><img src="images/folio/art/6_thumb.jpg"></a>
+               <a href="images/folio/art/7.jpg"><img src="images/folio/art/7_thumb.jpg"></a>
+               <a href="images/folio/art/8.jpg"><img src="images/folio/art/8_thumb.jpg"></a>
+               <a href="images/folio/art/9.jpg"><img src="images/folio/art/9_thumb.jpg"></a>
+               <a href="images/folio/art/10.jpg"><img src="images/folio/art/10_thumb.jpg"></a>
+            </div>
+         </div>
+      </div>
+      <!--  ===============================================      -->
+      <div class="slide col-lg-12 col-md-12 col-sm-12 align-items-center" id="slide1b"  >
+         <h2>Screenshots</h2>
+         <div class="container">
+            <div class="fotorama "  data-nav="thumbs" data-width="100%"
+               data-ratio="800/600">
+               <a href="images/folio/ak/1.jpg"><img src="images/folio/ak/1_thumb.jpg"></a>
+               <a href="images/folio/ak/2.jpg"><img src="images/folio/ak/2_thumb.jpg"></a>
+               <a href="images/folio/ak/3.jpg"><img src="images/folio/ak/3_thumb.jpg"></a>
+               <a href="images/folio/ak/4.jpg"><img src="images/folio/ak/4_thumb.jpg"></a>
+               <a href="images/folio/ak/5.jpg"><img src="images/folio/ak/5_thumb.jpg"></a>
+               <a href="images/folio/ak/6.jpg"><img src="images/folio/ak/6_thumb.jpg"></a>
+               <a href="images/folio/ak/7.jpg"><img src="images/folio/ak/7_thumb.jpg"></a>
+               <a href="images/folio/ak/8.jpg"><img src="images/folio/ak/8_thumb.jpg"></a>
+               <a href="images/folio/ak/9.jpg"><img src="images/folio/ak/9_thumb.jpg"></a>
+               <a href="images/folio/ak/10.jpg"><img src="images/folio/ak/10_thumb.jpg"></a>
+            </div>
+         </div>
+      </div>
+      <!--  ===============================================      -->
+      <div class="slide col-lg-12 col-md-12 col-sm-12 align-items-center" id="slide1b"  >
+         <h2>Screenshots</h2>
+         <div class="container">
+            <div class="fotorama "  data-nav="thumbs" data-width="100%"
+               data-ratio="800/600">
+               <a href="images/folio/pa/1.jpg"><img src="images/folio/pa/1_thumb.jpg"></a>
+               <a href="images/folio/pa/2.jpg"><img src="images/folio/pa/2_thumb.jpg"></a>
+               <a href="images/folio/pa/3.jpg"><img src="images/folio/pa/3_thumb.jpg"></a>
+               <a href="images/folio/pa/4.jpg"><img src="images/folio/pa/4_thumb.jpg"></a>
+               <a href="images/folio/pa/5.jpg"><img src="images/folio/pa/5_thumb.jpg"></a>
+               <a href="images/folio/pa/6.jpg"><img src="images/folio/pa/6_thumb.jpg"></a>
+               <a href="images/folio/pa/7.jpg"><img src="images/folio/pa/7_thumb.jpg"></a>
+               <a href="images/folio/pa/8.jpg"><img src="images/folio/pa/8_thumb.jpg"></a>
+               <a href="images/folio/pa/9.jpg"><img src="images/folio/pa/9_thumb.jpg"></a>
+               <a href="images/folio/pa/10.jpg"><img src="images/folio/pa/10_thumb.jpg"></a>
+            </div>
+         </div>
+      </div>
+      <!--  ===============================================      -->
+      <div class="slide col-lg-12 col-md-12 col-sm-12 align-items-center" id="slide1b"  >
+         <h2>Screenshots</h2>
+         <div class="container">
+            <div class="fotorama "  data-nav="thumbs" data-width="100%"
+               data-ratio="800/600">
+               <a href="images/folio/vr/1.jpg"><img src="images/folio/vr/1_thumb.jpg"></a>
+               <a href="images/folio/vr/2.jpg"><img src="images/folio/vr/2_thumb.jpg"></a>
+               <a href="images/folio/vr/3.jpg"><img src="images/folio/vr/3_thumb.jpg"></a>
+               <a href="images/folio/vr/4.jpg"><img src="images/folio/vr/4_thumb.jpg"></a>
+               <a href="images/folio/vr/5.jpg"><img src="images/folio/vr/5_thumb.jpg"></a>
+               <a href="images/folio/vr/6.jpg"><img src="images/folio/vr/6_thumb.jpg"></a>
+               <a href="images/folio/vr/7.jpg"><img src="images/folio/vr/7_thumb.jpg"></a>
+               <a href="images/folio/vr/8.jpg"><img src="images/folio/vr/8_thumb.jpg"></a>
+               <a href="images/folio/vr/9.jpg"><img src="images/folio/vr/9_thumb.jpg"></a>
+               <a href="images/folio/vr/10.jpg"><img src="images/folio/vr/10_thumb.jpg"></a>
+            </div>
+         </div>
+      </div>
+      <!--  ===============================================      -->
+      <div class="slide col-lg-12 col-md-12 col-sm-12 align-items-center" id="slide1b"  >
+         <h2>Screenshots</h2>
+         <div class="container">
+            <div class="fotorama "  data-nav="thumbs" data-width="100%"
+               data-ratio="800/600">
+               <a href="images/folio/ls1/1.jpg"><img src="images/folio/ls1/1_thumb.jpg"></a>
+               <a href="images/folio/ls1/2.jpg"><img src="images/folio/ls1/2_thumb.jpg"></a>
+               <a href="images/folio/ls1/3.jpg"><img src="images/folio/ls1/3_thumb.jpg"></a>
+               <a href="images/folio/ls1/4.jpg"><img src="images/folio/ls1/4_thumb.jpg"></a>
+               <a href="images/folio/ls1/5.jpg"><img src="images/folio/ls1/5_thumb.jpg"></a>
+               <a href="images/folio/ls1/6.jpg"><img src="images/folio/ls1/6_thumb.jpg"></a>
+               <a href="images/folio/ls1/7.jpg"><img src="images/folio/ls1/7_thumb.jpg"></a>
+               <a href="images/folio/ls1/8.jpg"><img src="images/folio/ls1/8_thumb.jpg"></a>
+               <a href="images/folio/ls1/9.jpg"><img src="images/folio/ls1/9_thumb.jpg"></a>
+               <a href="images/folio/ls1/10.jpg"><img src="images/folio/ls1/10_thumb.jpg"></a>
+            </div>
+         </div>
+      </div>
+      <!--  ===============================================      -->
+      <div class="slide col-lg-12 col-md-12 col-sm-12 align-items-center" id="slide1b"  >
+         <h2>Screenshots</h2>
+         <div class="container">
+            <div class="fotorama "  data-nav="thumbs" data-width="100%"
+               data-ratio="800/600">
+               <a href="images/folio/zt/1.jpg"><img src="images/folio/zt/1_thumb.jpg"></a>
+               <a href="images/folio/zt/2.jpg"><img src="images/folio/zt/2_thumb.jpg"></a>
+               <a href="images/folio/zt/3.jpg"><img src="images/folio/zt/3_thumb.jpg"></a>
+               <a href="images/folio/zt/4.jpg"><img src="images/folio/zt/4_thumb.jpg"></a>
+               <a href="images/folio/zt/5.jpg"><img src="images/folio/zt/5_thumb.jpg"></a>
+               <a href="images/folio/zt/6.jpg"><img src="images/folio/zt/6_thumb.jpg"></a>
+               <a href="images/folio/zt/7.jpg"><img src="images/folio/zt/7_thumb.jpg"></a>
+               <a href="images/folio/zt/8.jpg"><img src="images/folio/zt/8_thumb.jpg"></a>
+               <a href="images/folio/zt/9.jpg"><img src="images/folio/zt/9_thumb.jpg"></a>
+               <a href="images/folio/zt/10.jpg"><img src="images/folio/zt/10_thumb.jpg"></a>
+            </div>
+         </div>
+      </div>
+      <!--  ===============================================      -->
+      <div class="slide col-lg-12 col-md-12 col-sm-12 align-items-center" id="slide1b"  >
+         <h2>Screenshots</h2>
+         <div class="container">
+            <div class="fotorama "  data-nav="thumbs" data-width="100%"
+               data-ratio="800/600">
+               <a href="images/folio/a1/1.jpg"><img src="images/folio/a1/1_thumb.jpg"></a>
+               <a href="images/folio/a1/2.jpg"><img src="images/folio/a1/2_thumb.jpg"></a>
+               <a href="images/folio/a1/3.jpg"><img src="images/folio/a1/3_thumb.jpg"></a>
+               <a href="images/folio/a1/4.jpg"><img src="images/folio/a1/4_thumb.jpg"></a>
+               <a href="images/folio/a1/5.jpg"><img src="images/folio/a1/5_thumb.jpg"></a>
+               <a href="images/folio/a1/6.jpg"><img src="images/folio/a1/6_thumb.jpg"></a>
+               <a href="images/folio/a1/7.jpg"><img src="images/folio/a1/7_thumb.jpg"></a>
+               <a href="images/folio/a1/8.jpg"><img src="images/folio/a1/8_thumb.jpg"></a>
+               <a href="images/folio/a1/9.jpg"><img src="images/folio/a1/9_thumb.jpg"></a>
+               <a href="images/folio/a1/10.jpg"><img src="images/folio/a1/10_thumb.jpg"></a>
+            </div>
+         </div>
+      </div>
+      <!--  ===============================================      -->
+      <div class="slide col-lg-12 col-md-12 col-sm-12 align-items-center" id="slide1b"  >
+         <h2>Screenshots</h2>
+         <div class="container">
+            <div class="fotorama "  data-nav="thumbs" data-width="100%"
+               data-ratio="800/600">
+               <a href="images/folio/graphics/0.jpg"><img src="images/folio/graphics/0_thumb.jpg"></a>
+               <a href="images/folio/graphics/00.jpg"><img src="images/folio/graphics/0a_thumb.jpg"></a>
+               <a href="images/folio/graphics/1.jpg"><img src="images/folio/graphics/1_thumb.jpg"></a>
+               <a href="images/folio/graphics/2.jpg"><img src="images/folio/graphics/2_thumb.jpg"></a>
+               <a href="images/folio/graphics/3.jpg"><img src="images/folio/graphics/3_thumb.jpg"></a>
+               <a href="images/folio/graphics/4.jpg"><img src="images/folio/graphics/4_thumb.jpg"></a>
+               <a href="images/folio/graphics/5.jpg"><img src="images/folio/graphics/5_thumb.jpg"></a>
+               <a href="images/folio/graphics/6.jpg"><img src="images/folio/graphics/6_thumb.jpg"></a>
+               <a href="images/folio/graphics/7.jpg"><img src="images/folio/graphics/7_thumb.jpg"></a>
+               <a href="images/folio/graphics/8.jpg"><img src="images/folio/graphics/8_thumb.jpg"></a>
+               <a href="images/folio/graphics/9.jpg"><img src="images/folio/graphics/9_thumb.jpg"></a>
+               <a href="images/folio/graphics/10.jpg"><img src="images/folio/graphics/10_thumb.jpg"></a>
+            </div>
+         </div>
+      </div>
+      <!--  ===============================================      -->
+      <div class="slide col-lg-12 col-md-12 col-sm-12 align-items-center" id="slide1b"  >
+         <h2>Screenshots</h2>
+         <div class="container">
+            <div class="fotorama "  data-nav="thumbs" data-width="100%"
+               data-ratio="800/600">
+               <a href="images/folio/art/1.jpg"><img src="images/folio/art/1_thumb.jpg"></a>
+               <a href="images/folio/art/2.jpg"><img src="images/folio/art/2_thumb.jpg"></a>
+               <a href="images/folio/art/3.jpg"><img src="images/folio/art/3_thumb.jpg"></a>
+               <a href="images/folio/art/4.jpg"><img src="images/folio/art/4_thumb.jpg"></a>
+               <a href="images/folio/art/5.jpg"><img src="images/folio/art/5_thumb.jpg"></a>
+               <a href="images/folio/art/6.jpg"><img src="images/folio/art/6_thumb.jpg"></a>
+               <a href="images/folio/art/7.jpg"><img src="images/folio/art/7_thumb.jpg"></a>
+               <a href="images/folio/art/8.jpg"><img src="images/folio/art/8_thumb.jpg"></a>
+               <a href="images/folio/art/9.jpg"><img src="images/folio/art/9_thumb.jpg"></a>
+               <a href="images/folio/art/10.jpg"><img src="images/folio/art/10_thumb.jpg"></a>
+            </div>
+         </div>
+      </div>
+      <!--  ===============================================      -->
+      <div class="slide col-lg-12 col-md-12 col-sm-12 align-items-center" id="slide1b"  >
+         <h2>Screenshots</h2>
+         <div class="container">
+            <div class="fotorama "  data-nav="thumbs" data-width="100%"
+               data-ratio="800/600">
+               <a href="images/folio/art/1.jpg"><img src="images/folio/art/1_thumb.jpg"></a>
+               <a href="images/folio/art/2.jpg"><img src="images/folio/art/2_thumb.jpg"></a>
+               <a href="images/folio/art/3.jpg"><img src="images/folio/art/3_thumb.jpg"></a>
+               <a href="images/folio/art/4.jpg"><img src="images/folio/art/4_thumb.jpg"></a>
+               <a href="images/folio/art/5.jpg"><img src="images/folio/art/5_thumb.jpg"></a>
+               <a href="images/folio/art/6.jpg"><img src="images/folio/art/6_thumb.jpg"></a>
+               <a href="images/folio/art/7.jpg"><img src="images/folio/art/7_thumb.jpg"></a>
+               <a href="images/folio/art/8.jpg"><img src="images/folio/art/8_thumb.jpg"></a>
+               <a href="images/folio/art/9.jpg"><img src="images/folio/art/9_thumb.jpg"></a>
+               <a href="images/folio/art/10.jpg"><img src="images/folio/art/10_thumb.jpg"></a>
+            </div>
+         </div>
+      </div>
+      <!--  ===============================================      -->
+      <div class="slide col-lg-12 col-md-12 col-sm-12 align-items-center" id="slide1b"  >
+         <h2>Screenshots</h2>
+         <div class="container">
+            <div class="fotorama "  data-nav="thumbs" data-width="100%"
+               data-ratio="800/600">
+               <a href="images/folio/art/1.jpg"><img src="images/folio/art/1_thumb.jpg"></a>
+               <a href="images/folio/art/2.jpg"><img src="images/folio/art/2_thumb.jpg"></a>
+               <a href="images/folio/art/3.jpg"><img src="images/folio/art/3_thumb.jpg"></a>
+               <a href="images/folio/art/4.jpg"><img src="images/folio/art/4_thumb.jpg"></a>
+               <a href="images/folio/art/5.jpg"><img src="images/folio/art/5_thumb.jpg"></a>
+               <a href="images/folio/art/6.jpg"><img src="images/folio/art/6_thumb.jpg"></a>
+               <a href="images/folio/art/7.jpg"><img src="images/folio/art/7_thumb.jpg"></a>
+               <a href="images/folio/art/8.jpg"><img src="images/folio/art/8_thumb.jpg"></a>
+               <a href="images/folio/art/9.jpg"><img src="images/folio/art/9_thumb.jpg"></a>
+               <a href="images/folio/art/10.jpg"><img src="images/folio/art/10_thumb.jpg"></a>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

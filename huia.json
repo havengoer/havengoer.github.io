@@ -1,0 +1,91 @@
+{
+	"name": "HUIA",
+	"img": "images/huia/huia_logo.jpg",
+	"children": [
+
+		{
+			"hero": "About",
+			"name": "",
+			"link": "http://marvel.com/characters/68/avengers",
+			"img": "images/huia/about.jpg",
+			"size": 40000,
+			"children": [
+
+				{
+					"hero": "Avengers2",
+					"name": "",
+					"link": "http://marvel.com/characters/68/avengers",
+					"img": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/avengers.png",
+					"size": 40000, 
+				  	"children": [
+
+				{
+					"hero": "Avengers2",
+					"name": "",
+					"link": "http://marvel.com/characters/68/avengers",
+					"img": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/avengers.png",
+					"size": 40000
+				}
+			]
+				}
+			]
+		},
+				{
+					"hero": "About",
+					"name": "",
+					"link": "http://marvel.com/characters/68/avengers",
+					"img": "images/huia/about.jpg",
+					"size": 40000,
+					"children": [
+		
+						{
+							"hero": "Avengers2",
+							"name": "",
+							"link": "http://marvel.com/characters/68/avengers",
+							"img": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/avengers.png",
+							"size": 40000, 
+						  	"children": [
+		
+						{
+							"hero": "Avengers2",
+							"name": "",
+							"link": "http://marvel.com/characters/68/avengers",
+							"img": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/avengers.png",
+							"size": 40000
+						}
+					]
+						}
+					]
+		},
+				{
+					"hero": "About",
+					"name": "",
+					"link": "http://marvel.com/characters/68/avengers",
+					"img": "images/huia/about.jpg",
+					"size": 40000,
+					"children": [
+		
+						{
+							"hero": "Avengers2",
+							"name": "",
+							"link": "http://marvel.com/characters/68/avengers",
+							"img": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/avengers.png",
+							"size": 40000, 
+						  	"children": [
+		
+						{
+							"hero": "Avengers2",
+							"name": "",
+							"link": "http://marvel.com/characters/68/avengers",
+							"img": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/avengers.png",
+							"size": 40000
+						}
+					]
+						}
+					]
+		}
+	]
+
+
+
+}

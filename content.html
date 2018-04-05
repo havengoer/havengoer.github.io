@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Clariz Mariano</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<meta name="description" content="fullPage full-screen navigation and sections control menu." />
+		<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
+		<meta name="Resource-type" content="Document" />
+		<link rel="stylesheet" type="text/css" href="js/jquery.fullPage.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+		<link rel="stylesheet" type="text/css" href="css/examples.css" />
+		<!-- Template CSS Files
+			================================================== -->
+		<!-- iOS Build Bootstrs CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Ionicons Fonts Css -->
+		<link rel="stylesheet" href="css/ionicons.min.css">
+		<!-- animate css -->
+		<link rel="stylesheet" href="css/animate.css">
+		<!-- Hero area slider css-->
+		<link rel="stylesheet" href="css/slider.css">
+		<!-- owl craousel css -->
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/owl.theme.css">
+		<link rel="stylesheet" href="css/jquery.fancybox.css">
+		<!-- template main css file -->
+		<link rel="stylesheet" href="css/main.css">
+		<!-- responsive css -->
+		<link rel="stylesheet" href="css/responsive.css">
+		<style>
+			/* Style for section backgrounds
+			* --------------------------------------- */
+			/* Centered texts in each section
+			* --------------------------------------- */
+			/* Overwriting styles for control arrows for slides
+			* --------------------------------------- */
+			.controlArrow.prev {
+			left: 50px;
+			}
+			.controlArrow.next{
+			right: 50px;
+			}
+			/* Bottom menu
+			* --------------------------------------- */
+			#infoMenu li a {
+			color: #fff;
+			}
+		</style>
+		<!--[if IE]>
+		<script type="text/javascript">
+			var console = { log: function() {} };
+		</script>
+		<![endif]-->
+		<!--
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+			-->
+		<!-- Template Javascript Files
+			================================================== -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+		<!-- modernizr js -->
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+		<!-- jquery -->
+		<script src="js/jquery.min.js"></script>
+		<!-- owl carouserl js -->
+		<script src="js/owl.carousel.min.js"></script>
+		<!-- bootstrap js -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- wow js -->
+		<script src="js/wow.min.js"></script>
+		<!-- slider js -->
+		<script src="js/slider.js"></script>
+		<script src="js/jquery.fancybox.js"></script>
+		<!-- template main js -->
+		<script src="js/main.js"></script>
+		<script type="text/javascript" src="vendors/scrolloverflow.js"></script>
+		<script type="text/javascript" src="js/examples.js"></script>
+		<!-- fotorama.css & fotorama.js. -->
+		<link  href="css/fotorama.css" rel="stylesheet">
+		<!-- 3 KB -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+		    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+		<script>
+			if (screen && screen.width > 768) {
+			document.write('<script type="text/javascript" src="js/jquery.fullPage.js"><\/script>');
+			console.log("Fullpage MODE ON");
+			}
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+			$('#fullpage').fullpage({
+							anchors: ['FirstPagex', 'SecondPagex', 'ThirdPagex', 'FourthPagex', 'FifthPagex'],
+			css3: true,
+
+			fitToSection: false,
+			scrollOverflow: true,
+				navigation: true,
+				navigationPosition: 'right',
+			resetSliders: true,
+			scrollOverflowOptions: {
+			mouseWheel: true,
+			hideScrollbars: false,
+			fadeScrollbars: false,
+			disableMouse: true,
+			}
+
+			});
+			});
+		</script>
+<style>
+      @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600);
+      body {font-family: "Source Code Pro", Consolas, monaco, monospace; line-height: 160%; font-size: 16px;  margin: 0; }
+      path.link {
+        fill: none;
+        stroke-width: 5px;
+
+      }
+      .links line {
+	    stroke: red;
+	    stroke-opacity: 0.6;
+}
+      .node:not(:hover) .nodetext {
+        display: none;
+      }
+      h1 { font-size: 36px; margin: 10px 0; text-transform: uppercase; font-weight: normal;}
+      h2, h3 { font-size: 18px; margin: 5px 0 ; font-weight: normal;}
+      header {padding: 20px; position: absolute; top: 0; left: 0;}
+      a:link { color: #EE3124; text-decoration: none;}
+      a:visited { color: #EE3124; }
+      a:hover { color: #A4CD39; text-decoration: underline;}
+      a:active { color: #EE3124; }
+
+      </style>
+	</head>
+	<body>
+
+		<script>
+			function myFunction() {
+			    var x = document.getElementById("myTopnav");
+			    if (x.className === "topnav") {
+			        x.className += " responsive";
+			    } else {
+			        x.className = "topnav";
+			    }
+			}
+		</script>
+		<div id="fullpage">
+			<div class="section" col-lg-12 col-md-12 col-sm-12 " id="slide0a">
+				<div class="align-items-center">
+
+    <section id="vis"></section>
+<script>
+
+// some colour variables
+  var tcBlack = "#130C0E";
+
+// rest of vars
+var w = 1560,
+    h = 700,
+    maxNodeSize = 100,
+    x_browser = 20,
+    y_browser = 25,
+    root;
+
+var vis;
+var force = d3.layout.force();
+
+vis = d3.select("#vis").append("svg").attr("width", w).attr("height", h);
+
+d3.json("huia.json", function(json) {
+
+  root = json;
+  root.fixed = true;
+  root.x = w / 2;
+  root.y = h / 4;
+
+
+        // Build the path
+  var defs = vis.insert("svg:defs")
+      .data(["end"]);
+
+
+  defs.enter().append("svg:path")
+      .attr("d", "M0,-5L10,0L0,5");
+
+     update();
+});
+
+
+/**
+ *
+ */
+function update() {
+  var nodes = flatten(root),
+      links = d3.layout.tree().links(nodes);
+
+  // Restart the force layout.
+  force.nodes(nodes)
+        .links(links)
+        .gravity(0.05)
+    .charge(-1500)
+    .linkDistance(100)
+    .friction(0.5)
+    .linkStrength(function(l, i) {return 1; })
+    .size([w, h])
+    .on("tick", tick)
+        .start();
+
+   var path = vis.selectAll("path.link")
+      .data(links, function(d) { return d.target.id; });
+
+    path.enter().insert("svg:path")
+      .attr("class", "link")
+      // .attr("marker-end", "url(#end)")
+      .style("stroke", "black");
+
+
+  // Exit any old paths.
+  path.exit().remove();
+
+
+
+  // Update the nodes…
+  var node = vis.selectAll("g.node")
+      .data(nodes, function(d) { return d.id; });
+
+
+  // Enter any new nodes.
+  var nodeEnter = node.enter().append("svg:g")
+      .attr("class", "node")
+      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
+      .on("click", click)
+      .call(force.drag);
+
+  // Append a circle
+  nodeEnter.append("svg:circle")
+      .attr("r", function(d) { return Math.sqrt(d.size) / 10 || 1.5; })
+      .style("fill", "black");
+
+
+  // Append images
+  var images = nodeEnter.append("svg:image")
+        .attr("xlink:href",  function(d) { return d.img;})
+        .attr("x", function(d) { return -25;})
+        .attr("y", function(d) { return -25;})
+        .attr("height", 150)
+        .attr("width", 150);
+
+  // make the image grow a little on mouse over and add the text details on click
+  var setEvents = images
+          // Append hero text
+          .on( 'click', function (d) {
+              d3.select("h1").html(d.hero);
+              d3.select("h2").html(d.name);
+              d3.select("h3").html ("Take me to " + "<a href='" + d.link + "' >"  + d.hero + " web page ?"+ "</a>" );
+           })
+
+          .on( 'mouseenter', function() {
+            // select element in current context
+            d3.select( this )
+              .transition()
+              .attr("x", function(d) { return -60;})
+              .attr("y", function(d) { return -60;})
+              .attr("height", 500)
+              .attr("width", 500);
+          })
+          // set back
+          .on( 'mouseleave', function() {
+            d3.select( this )
+              .transition()
+              .attr("x", function(d) { return -25;})
+              .attr("y", function(d) { return -25;})
+              .attr("height", 150)
+              .attr("width", 150);
+          });
+
+  // Append hero name on roll over next to the node as well
+  nodeEnter.append("text")
+      .attr("class", "nodetext")
+      .attr("x", x_browser)
+      .attr("y", y_browser +150	)
+      .attr("fill", tcBlack)
+      .text(function(d) { return d.hero; });
+
+
+  // Exit any old nodes.
+  node.exit().remove();
+
+
+  // Re-select for update.
+  path = vis.selectAll("path.link");
+  node = vis.selectAll("g.node");
+
+function tick() {
+
+
+    path.attr("d", function(d) {
+
+     var dx = d.target.x - d.source.x,
+           dy = d.target.y - d.source.y,
+           dr = Math.sqrt(dx * dx + dy * dy);
+           return   "M" + d.source.x + ","
+            + d.source.y
+            + "A" + dr + ","
+            + dr + " 0 0,1 "
+            + d.target.x + ","
+            + d.target.y;
+  });
+    node.attr("transform", nodeTransform);
+  }
+}
+
+
+/**
+ * Gives the coordinates of the border for keeping the nodes inside a frame
+ * http://bl.ocks.org/mbostock/1129492
+ */
+function nodeTransform(d) {
+  d.x =  Math.max(maxNodeSize, Math.min(w - (d.imgwidth/2 || 16), d.x));
+    d.y =  Math.max(maxNodeSize, Math.min(h - (d.imgheight/2 || 16), d.y));
+    return "translate(" + d.x + "," + d.y + ")";
+   }
+
+/**
+ * Toggle children on click.
+ */
+function click(d) {
+  if (d.children) {
+    d._children = d.children;
+    d.children = null; //comment this out after
+  } else {
+    d.children = d._children;
+    d._children = null; //comment this out after
+  }
+
+  update();
+}
+
+
+/**
+ * Returns a list of all nodes under the root.
+ */
+function flatten(root) {
+  var nodes = [];
+  var i = 0;
+
+  function recurse(node) {
+    if (node.children)
+      node.children.forEach(recurse);
+    if (!node.id)
+      node.id = ++i;
+    nodes.push(node);
+  }
+
+  recurse(root);
+  return nodes;
+}
+
+
+</script>
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>
